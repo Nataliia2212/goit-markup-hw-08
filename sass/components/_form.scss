@@ -1,0 +1,99 @@
+.contact-form__field {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+}
+
+.contact-form__wrapper {
+    position: relative;
+    display: block;
+    margin-top: 4px;
+}
+
+.contact-form__input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+}
+
+.contact-form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contact-form__input:focus + & {
+        fill: var(--accent-color);
+    }
+}
+
+.contact-form__coment {
+    margin-bottom: 20px;
+}
+
+.contact-form__textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    margin-top: 4px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+    &::placeholder {
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.contact-form__checkbox-wrapper {
+    margin-bottom: 30px;
+}
+
+.contact-form__checkbox-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.71;
+
+    &::before {
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 1px solid #212121;
+        cursor: pointer;
+        content: '';
+        margin-right: 8px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        .contact-form__checkbox:focus + & {
+            outline: 1px solid var(--accent-color);
+        }
+        .contact-form__checkbox:checked + & {
+           background-image: url('..//images/check-icon.svg');
+           border-radius: 2px;
+           border: none;
+        }
+    }
+}
+
+.policy-contract {
+    color: var(--accent-color);
+}

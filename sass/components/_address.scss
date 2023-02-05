@@ -1,0 +1,12 @@
+.address-list:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-list__link {
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.address-list__contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
