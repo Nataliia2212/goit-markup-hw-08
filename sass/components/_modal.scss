@@ -2,8 +2,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background-color: var(--primary-backgroun-color);
     transform: scale(1) translate(-50%, -50%);
@@ -16,7 +16,7 @@
         opacity: 0;
     }
 }
-
+    
 .close-btn {
     position: absolute;
     top: 8px;
@@ -45,4 +45,11 @@
     line-height: 1.15;
     text-align: center;
     color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    }
 }

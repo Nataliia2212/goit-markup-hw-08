@@ -1,12 +1,18 @@
 .address-list:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .address-list__link {
     font-style: normal;
+    line-height: 1.71;
     color: #FFFFFF;
 }
 
 .address-list__contacts {
     color: rgba(255, 255, 255, 0.6);
 }
+
