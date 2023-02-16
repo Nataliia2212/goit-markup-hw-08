@@ -74,6 +74,10 @@
     font-size: 12px;
     line-height: 1.71;
 
+    @media screen and (max-width: 400px) {
+        font-size: 8px;
+    }
+
     &::before {
         display: block;
         width: 16px;

@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
+    @media screen and (max-width: 400px) {
+        margin-right: -15px;
+    }
 }
 
 .clients-list__link {

@@ -21,6 +21,9 @@ header {
     }
 }
 
+
+
+
 @media screen and (max-width:767px) {
     .nav-list {
         display: none;
@@ -29,14 +32,23 @@ header {
     .contacts {
         display: none;
     }
-    
+        
     .mobil-menu__btn {
+        display: block;
         background-color: transparent;
         border: none;
         padding: 0;
         line-height: 0;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
     }
-}
+        
+    }
 
 @media screen and (min-width: 768px) {
      .mobil-menu__btn {
